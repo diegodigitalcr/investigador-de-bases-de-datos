@@ -1,0 +1,7 @@
+interface:
+  display_name: "Company Database Researcher"
+  short_description: "Research companies and build sourced Excel databases"
+  brand_color: "#147D7E"
+  default_prompt: "Use $company-database-researcher to research a sector and build a sourced company database in Excel."
+policy:
+  allow_implicit_invocation: true
