@@ -1,6 +1,6 @@
 ---
 name: investigador-de-bases-de-datos
-description: Investiga empresas por sector y crea bases de datos verificables en Excel con contactos corporativos, responsables clave, LinkedIn, fuentes, filtros y control de calidad. Úsalo para identificar empresas relevantes de un mercado o repetir una metodología de prospección sectorial; no aplica a listas rápidas sin investigación ni a una simple edición de celdas.
+description: Investiga empresas por sector y crea bases verificables en Excel con contactos, responsables, LinkedIn y fuentes. Úsala para investigación de mercado o prospección sectorial.
 ---
 
 # Investigador de bases de datos

@@ -4,7 +4,7 @@
 
 ## Español
 
-**Investigador de bases de datos** es una skill de Codex para investigar empresas de un sector y convertir los hallazgos en un libro de Excel listo para analizar o usar en prospección. La versión española está en la raíz: [`SKILL.md`](SKILL.md), [`references/workbook-spec.md`](references/workbook-spec.md) y [`agents/openai.yaml`](agents/openai.yaml).
+**Investigador de bases de datos** es una skill para Codex y Claude que investiga empresas de un sector y convierte los hallazgos en un libro de Excel listo para analizar o usar en prospección. La versión española está en la raíz: [`SKILL.md`](SKILL.md), [`references/workbook-spec.md`](references/workbook-spec.md) y los metadatos opcionales de Codex en [`agents/openai.yaml`](agents/openai.yaml).
 
 ### Qué hace
 
@@ -20,7 +20,7 @@ El libro tiene cinco hojas: **Resumen**, **Base de empresas**, **Perfiles Linked
 
 La skill no trata la selección como un ranking por ingresos cuando faltan cifras comparables. No inventa cargos, perfiles ni correos, no genera direcciones de email por patrón y utiliza únicamente información corporativa o profesional publicada abiertamente. Un registro marcado «Completo» cumple los mínimos del proyecto; no significa que sus datos sean definitivos.
 
-### Cómo usarla
+### Cómo usarla en Codex
 
 Instala la carpeta raíz como `~/.codex/skills/investigador-de-bases-de-datos/`, conservando `SKILL.md`, `references/` y `agents/`. Después, pide por ejemplo:
 
@@ -28,9 +28,16 @@ Instala la carpeta raíz como `~/.codex/skills/investigador-de-bases-de-datos/`,
 
 Indica el sector y la geografía. Puedes añadir subsectores, cantidad aproximada, criterios de prioridad y propósito de la base. La calidad y disponibilidad de contactos dependen de las fuentes públicas del mercado elegido.
 
+### Cómo usarla en Claude
+
+- **Claude Code:** copia `SKILL.md` y `references/` a `~/.claude/skills/investigador-de-bases-de-datos/` para tenerla disponible en todos tus proyectos. También puedes instalarla en `.claude/skills/investigador-de-bases-de-datos/` dentro de un proyecto. Invócala con `/investigador-de-bases-de-datos` o pide a Claude que investigue empresas por sector.
+- **Claude en la web o Cowork:** ejecuta `python3 scripts/package-claude.py` desde este repositorio. Se generará `dist/investigador-de-bases-de-datos.zip`. En Claude, activa la creación de archivos y ve a **Personalizar > Skills > + > Crear skill > Cargar una skill** para subir el ZIP y activarla. El paquete contiene solo la skill en español.
+
+La investigación requiere acceso a fuentes públicas y la creación del Excel requiere herramientas para generar archivos `.xlsx`. La disponibilidad de herramientas y permisos depende del entorno de Claude en que se ejecute.
+
 ## English
 
-**Company Database Researcher** is a Codex skill that researches companies in a sector and turns the findings into an Excel workbook for analysis or prospecting. The complete English version is in [`en/company-database-researcher/SKILL.md`](en/company-database-researcher/SKILL.md), with its own [workbook specification](en/company-database-researcher/references/workbook-spec.md) and [Codex metadata](en/company-database-researcher/agents/openai.yaml).
+**Company Database Researcher** is a skill for Codex and Claude that researches companies in a sector and turns the findings into an Excel workbook for analysis or prospecting. The complete English version is in [`en/company-database-researcher/SKILL.md`](en/company-database-researcher/SKILL.md), with its own [workbook specification](en/company-database-researcher/references/workbook-spec.md) and optional [Codex metadata](en/company-database-researcher/agents/openai.yaml).
 
 ### What it does
 
@@ -46,13 +53,20 @@ The workbook has five sheets: **Summary**, **Company Database**, **LinkedIn Prof
 
 The skill does not call the selection a revenue ranking when comparable financial data is unavailable. It does not guess roles, profiles, or email addresses, does not generate emails from patterns, and uses only openly published corporate or professional information. A record marked “Complete” meets the project's minimum fields; it does not mean its information is permanent or exhaustive.
 
-### How to use it
+### How to use it in Codex
 
 Copy the `en/company-database-researcher/` folder to `~/.codex/skills/company-database-researcher/`, keeping `SKILL.md`, `references/`, and `agents/` together. Then ask, for example:
 
 > Use `$company-database-researcher` to research 25 logistics companies in Costa Rica and build a sourced Excel database.
 
 Provide the industry and geography. You can also specify subsectors, an approximate count, priority criteria, and the database's intended use. Contact availability and completeness depend on the public sources for the selected market.
+
+### How to use it in Claude
+
+- **Claude Code:** copy `en/company-database-researcher/SKILL.md` and its `references/` directory to `~/.claude/skills/company-database-researcher/` for use across projects, or to `.claude/skills/company-database-researcher/` inside one project. Invoke it with `/company-database-researcher` or ask Claude to research companies in a sector.
+- **Claude on the web or Cowork:** run `python3 scripts/package-claude.py` from this repository. It creates `dist/company-database-researcher.zip`. In Claude, enable file creation, then go to **Customize > Skills > + > Create skill > Upload a skill**. Upload the ZIP and enable it. This package contains only the English skill.
+
+Research requires access to public sources, and creating the workbook requires tools that can produce `.xlsx` files. Available tools and permissions depend on the Claude environment.
 
 ## Autor / Creator and license
 
