@@ -1,6 +1,6 @@
 ---
 name: company-database-researcher
-description: Research companies by sector and build a verifiable Excel database with corporate contacts, key decision makers, LinkedIn profiles, sources, filters, and quality checks. Use when the user wants a researched company list for a market or a repeatable sector prospecting method; not for a quick unsourced list or a simple cell edit.
+description: Research companies by sector and build a sourced Excel database with contacts, decision makers, LinkedIn profiles, and evidence. Use for market research or sector prospecting.
 ---
 
 # Company Database Researcher
