@@ -70,7 +70,7 @@ Research requires access to public sources, and creating the workbook requires t
 
 ## Autor / Creator and license
 
-Both versions add a small **Diego Digital** link block at the end of the final analysis and the workbook's summary sheet. These links identify the methodology's creator and are separate from the research sources.
+Both versions add a short call to action at the end of the final analysis and the workbook's summary sheet: if the skill helped, follow Diego Digital on Instagram and TikTok to keep learning about AI and marketing, and visit the website for more resources.
 
 [Website](https://diegodigital.com/) · [Instagram](https://www.instagram.com/diegodigitalcr/) · [TikTok](https://www.tiktok.com/@diegodigitalcr)
 
