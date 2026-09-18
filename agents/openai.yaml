@@ -1,0 +1,7 @@
+interface:
+  display_name: "Investigador de bases de datos"
+  short_description: "Investiga empresas y crea bases verificables en Excel"
+  brand_color: "#147D7E"
+  default_prompt: "Usa $investigador-de-bases-de-datos para investigar un sector y crear una base de empresas verificadas en Excel."
+policy:
+  allow_implicit_invocation: true
